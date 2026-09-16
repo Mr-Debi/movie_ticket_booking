@@ -1,0 +1,142 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Toria Page</title>
+
+    <!--  -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+    <!-- <link rel="stylesheet" href="{% static 'css/mdb.css' %}"> -->
+    
+    <link rel="stylesheet" href="{% static 'css/food.css' %}">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+
+    <!-- Our project just needs Font Awesome Free's Solid and Brand files -->
+      <link href="{% static 'fontawesomefree/css/fontawesome.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'fontawesomefree/css/brands.css' %}" rel="stylesheet" type="text/css">
+      <link href="{% static 'fontawesomefree/css/solid.css' %}" rel="stylesheet" type="text/css">
+
+      
+
+    <!--  -->
+
+</head>
+<body>
+  <i class="fa-solid fa-user-chef"></i> <!-- uses solid style -->
+      <i class="fa-brands fa-github-square"></i> <!-- uses brand style -->
+  
+  
+  <nav class="navbar navbar-light bg-secondary">
+    <!-- <a class="navbar-brand">Navbar</a> -->
+
+    <!-- Image and text -->
+    <nav class="navbar navbar-light bg-seconday">
+      <a class="navbar-brand text-light font-weight-bolder" href="#">
+        <img src="{% static 'images/rr.png' %}" width="50" height="50" class="d-inline-block align-center" alt="">
+        R THEATERS
+      </a>
+    </nav>
+
+    <div class="btn-group mr-1 col-sm text-decoration-none" role="group" aria-label="First group">
+      <!-- <button type="button" class="btn btn-secondary"><img src="{% static 'images/suzume.jpg' %}" alt=""></button> -->
+
+      <button type="button" class="btn btn-secondary"><a href="{% url 'index' %}" class="text-reset text-decoration-none">HOME</a></button>
+      <button type="button" class="btn btn-secondary"><a href="{% url 'booking' %}" class="text-reset text-decoration-none">BOOKING</a></button>
+      <button type="button" class="btn btn-secondary"><a href="{% url 'contact' %}" class="text-reset text-decoration-none">CONTACT US</a></button>
+          
+    </div>
+          
+          
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+      </form>
+  </nav>
+
+  <!-- coffee shop -->
+
+
+  <div class="food_card">
+    <div class="header">
+       <div class="icon">
+       <a href="#"><i class="fa fa-heart-o"></i></a>
+       </div>
+    </div>
+    <div class="text">
+       <h1 class="food">
+          Chinese Noodles
+       </h1>
+       <i class="fa fa-clock-o"> 15 Mins</i>
+       <i class="fa fa-users"> Serves 2</i>
+       
+       <div class="stars">
+          <li>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star"></i></a>
+             <a href="#"><i class="fa fa-star-o"></i></a>
+          </li>
+       </div>
+       <p class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum, temporibus.</p>
+    </div>
+    <a href="#" class="btn">Let's Cook!</a>
+ </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+
+    
+
+
+  
+  
+
+  <!-- coffee shop -->
+
+
+
+
+
+
+
+  <footer>
+    <div class="card text-center">
+      <div class="card-footer text-muted">
+        <h6> All rights reserved by R THEATERS </h6>
+        &#169; 2023
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- js start -->
+  <script src="{% static 'js/jquery.js' %}"></script>
+  <script src="{% static 'js/popper.js' %}"></script>
+  <script src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="{% static 'js/mdb.js' %}"></script>
+
+<!-- js end -->
+
+</body>
+</html>
